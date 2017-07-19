@@ -1,42 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<title>
+Tiffany Chung
+</title>
 <style>
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image1 {
+  display: block;
+  width: 60%;
+  height: 30%;
+}
+.image2{
+  display: block;
+  width: 50%;
+  height: 25%;
+}
+
+.overlay {
+  position: absolute;
+  top: 20;
+  bottom:0;
+  left: 0;
+  right: 50;
+  height: 90%;
+  width: 60%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  float: left;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
 body {
 color: white;
 }
+#left{
+          float: left;
+          background-color: aliceblue;
+          width: 70%;
+          margin-left: 20px;
+        }
+#top{
+  float: center;
+  background-color: navy;
+  width: 100%;
+  margin: 30px;
+}
+#seconddiv{
+  background-color: aliceblue;
+  margin-left: 20px;
+  float: center;
+  margin-right: 20px;
+}
+.jumbotron{
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: white;
+ text-shadow: black 0.2em 0.2em 0.2em;
+ width: 100%;
+ height: 50%;
+ left: 0;
+ top: 0;
+}
+
+#row2left{
+  margin-left:0px;
+  width: 70%;
+
+}
+#row2right{
+  float: right;
+  margin-right: 0px;
+  width: 70%;
+}
+#explainbar{
+  float: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#row2{
+  margin:0;
+  width:100%;
+}
+
+#row1{
+  margin:0;
+  width: 100%;
+}
+
 </style>
-<title>Tiffany Chung</title>
 </head>
-<body style="background-color:lightseagreen;">
+<body style="background-color:lightcyan;">
 
-<h1 style="text-align:center; color:darkblue; font-family:courier" >Tiffany Chung</h1>
-
-<h2 style="text-align:center; font-family:courier">Professional Napper and Enthusiasm Enthusiast. </h2>
-
-<p style="text-align:center; font-family:courier">Keep reading for more info!</p>
-
-  <img align="right"; src="faceshot.jpg"width="300" height="330">
-<br>
-<br>
-  <div id="myDiv" name="myDiv" title="Example Div Element" style="color: #0900C4; font: Helvetica 12pt;border: 1px solid darkblue;">
-  <h5 style= "text-align:left; font-family:courier; color:darkblue; font-size:20px">A lil biography!</h5>
-  <p style= "text-align:left; font-family:courier; color: white">Hey hey! My name is Tiffany and I am a rising senior at Carlmont High School.
-    My favorite classes include math and ASB. I can't wait to serve my school's ASB president next year.
-  Outside of school, I play cello in Peninsula Youth Orchestra, volunteer in my community and love, love, love to paint!</p>
-  <p style= "text-align:left; font-family:courier; color: white">Right now I am partaking in the Girls Who Code program at Electronic Arts.
-    This is my first time coding and/or using HTML. So far, my experience
-  has been awesome! I can't wait to learn more!</p>
+ <!-- jumbotron  -->
+<div style="height:350px;
+  background-image: url(http://www.hdwallpapers.in/walls/italy_morning_sunrise_landscape-HD.jpg);"
+ class="jumbotron">
+ <br>
+  <h2 style="color:white; text-align:center; font-family:courier;">Hello I'm</h2>
+  <h1 style="color:white;font-family:courier;text-align:center;">Tiffany Chung</h1>
 </div>
+
+ <!-- left block  -->
+<div id="row1">
+  <div id="left" style="color: #0900C4; font: Helvetica 12pt;border: 3px solid purple;">
+    <h5 style= "text-align:left; font-family:courier; color:purple; font-size:25px">A lil biography!</h5>
+  <p style= "text-align:left; font-family:courier; color: purple; font-size:18px">Hey hey! My name is Tiffany and I am a rising senior at Carlmont High School.
+    My favorite classes include math and ASB. I can't wait to serve my school as ASB president next year.
+    Outside of school, I play cello in Peninsula Youth Orchestra, volunteer in my community and love, love, love to paint! I also like to experiment with baking,
+    although I'm not especially talented.
+  </p>
+  <br>
+  <p style= "text-align:left; font-family:courier; color: purple; font-size:18px">Right now I am partaking in the Girls Who Code program at Electronic Arts.
+    This is my first time coding and/or using HTML. So far, my experience
+  has been awesome! We have, so far, experienced Scratch, HTML, Python, Arduino and a little Java. I can't wait to learn more!</p>
+</div>
+
+ <!-- right block  -->
+<IMG STYLE="position:absolute; TOP:250; LEFT:930px; WIDTH:320px; HEIGHT:325px" src="C:\Users\Coder\Desktop\aboutmepage\FullSizeRender.jpg"width="260" height="270">
+</div>
+
 <br>
-<div id="seconddiv" name="seconddiv" title="sidescroller" style="color: #0900C4; font: Helvetica 12pt;border: 1px solid darkblue;">
-  <h5 style= "text-align:left; font-family:courier; color:darkblue; font-size:20px">Here's a sidescroller game I made with my group!</h5>
-  <p style= "text-align:left; font-family:courier; color: white">This was inspired by Super Mario and Temple Run. My group and I liked the idea of
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- explain bar-->
+<div id="explainbar" style="background-color: aliceblue; font: Helvetica 12pt;border: 3px solid purple;">
+<h3 style= "font-family: courier;color: purple;"> Here are some things I love! Hover over the pics!</h3>
+</div>
+
+<br>
+
+<!--fade in section-->
+<div id= "row2">
+  <div id="row2left">
+    <div class="container"><img src="C:\Users\Coder\Desktop\aboutmepage\IMG_4904.jpg" alt="Avatar" class="image1">
+      <div class="overlay">
+        <div style="font-family: courier;" class="text">I love school spirit!</div>
+      </div>
+    </div>
+  </div><!-- row2left end div-->
+
+  <div style="position: absolute; font-family: courier;letter-spacing: 2px;font-size: 16px; top: 830px; width: 1000px;
+     left:450px; height: 25px; text-align:right">>
+    <div class="container">
+    <img src="C:\Users\Coder\Desktop\aboutmepage\IMG_9404.jpg" alt="Avatar" class="image2">
+      <div class="overlay">
+        <div style="font-family: courier;" class="text">I love eating!</div>
+      </div>
+    </div>
+  </div><!--row2right end div-->
+</div> <!-- row2 end div-->
+
+<br>
+
+<div id="seconddiv" name="seconddiv" title="sidescroller" style="background-color: aliceblue; font: Helvetica 12pt;border: 3px solid purple;">
+  <h5 style= "text-align:left; font-family:courier; color:purple; font-size:25px">Here's a sidescroller game I made with my group!</h5>
+  <p style= "text-align:left; font-family:courier; color: purple; font-size: 18px">This was inspired by Super Mario and Temple Run. My group and I liked the idea of
   having the user run and try to collect items.</p>
-  <center> <img src="patrickpic.png"width="850" height="450"> </center>
-  <p style= "text-align:left; font-family:courier; color: white">We also based the theme off of Spongebob, a classic childhood cartoon.
+  <center> <img src="C:\Users\Coder\Desktop\aboutmepage\patrickpic.png"width="870" height="450"> </center>
+  <p style= "text-align:left; font-family:courier; color: purple; font-size: 18px">We also based the theme off of Spongebob, a classic childhood cartoon.
   We chose Patrick as the main character and the objective was to catch jellyfish by jumping!</p>
 </div>
-<h3 style="text-align: left; font-family:courier"> yeaahaw </h3>
+<br>
 </body>
 </html>
